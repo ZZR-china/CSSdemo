@@ -1,0 +1,161 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font: "微软雅黑";
+	/*background-color: #007AFF;*/
+}
+
+ul>li {
+	list-style: none;
+}
+
+
+/*css插件*/
+
+.border-left {
+	border-left: 1px solid #000000;
+}
+
+
+/*页面初始化时样式*/
+
+#financial_base {
+	display: block;
+}
+
+#xiaobai_special {
+	display: none;
+}
+
+#xiaobai_customization {
+	display: none;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	background-color: #FFFEFF;
+	font-size: 1em;
+}
+
+.act {
+	color: red;
+}
+
+
+/*财代基础套餐*/
+
+.pic {
+	height: 300px;
+	background-color: #007AFF;
+	border-bottom: 1px soild #000000;
+}
+
+.pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.title-product {
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	/*for  uc*/
+	display: box;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	border-bottom: 1px solid #000000;
+}
+
+.title-product>div {
+	flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	/* for uc */
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+}
+
+.product-detail {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px;
+	color: #000000;
+}
+
+.product-detail p {
+	cursor: default;
+}
+
+.product-detail:hover {
+	color: red;
+}
+
+.product-content {
+	padding: 10px;
+	/*margin-top: 10px;*/
+	margin-bottom: 30px;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+.product-content:last-child {
+	border-bottom-width: 0;
+}
+
+.product-content h1 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.product-content .cost {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FF0000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.product-content p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.product-content .content-detail {
+	font-size: 18px;
+	color: #AAAAAA;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+/*小白特殊服务*/
+
+.product-table {
+	border: solid #add9c0;
+	border-width: 1px 0px 0px 1px;
+	width: 100%;
+	text-align: center;
+}
+
+.product-table th,
+td {
+	padding: 10px;
+	border: solid #add9c0;
+	border-width: 0px 1px 1px 0px;
+}
+
+
+/*响应式布局*/
+
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	.pic {
+		height: 200px;
+	}
+}
