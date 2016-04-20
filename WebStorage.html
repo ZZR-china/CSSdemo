@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WebStorage</title>
+		<script src="js/storage.js"></script>
+	</head>
+	<body>
+		<h1>简单WEB留言本</h1>
+		<textarea id="memo" cols="60" rows="10"></textarea><br>
+		<input type="button" value="追&nbsp;&nbsp;加" onclick="saveStorage('memo')" >
+		<input type="button" value="初始化数据" onclick="loadStorage('msg')" >
+		<input type="button" value="清空数据" onclick="clearStorage()"></input>
+		<hr>
+		<p id="msg"></p>
+	</body>
+</html>
